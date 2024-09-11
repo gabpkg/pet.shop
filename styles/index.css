@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea {
+    background-color: #131215;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+* a:hover {
+    color: #855EEE;
+}
+
+/* Estilizações para o header */
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1C1C1E;
+    padding: 18px 25px;
+    position: sticky;
+
+    .box-logo {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 25px;
+        font-family: "Paytone One";
+    }
+    .box-logo img {
+        width: 40px;
+    }
+
+    .box-input-search {
+        display: flex;
+        background-color: #343438;
+        width: 642px;
+        height: 40px;
+        border-radius: 10px;
+    }
+    .box-input-search input {
+        background-color: transparent;
+        flex: 1;
+        border: 0;
+        outline: 0;
+        padding: 14px 10px;
+        font-size: 16px;
+    }
+    .box-input-search input::placeholder {
+        color: #929499;
+        font-size: 16px;
+    }
+    .box-input-search .search {
+        all: unset;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+        width: 50px;
+        cursor: pointer;
+        color: #929499;
+    }
+
+    .container-cart-user {
+        display: flex;
+        gap: 50px;
+        align-items: center;
+    }
+    .container-cart-user .box-cart {
+        position: relative;
+    }
+    .container-cart-user .cart {
+        all: unset;
+        font-size: 28px;
+        cursor: pointer;
+        height: fit-content;
+    }
+    .container-cart-user .cart::after {
+        position: absolute;
+        top: -3px;
+        right: -4px;
+        font-size: 10px;
+        content: '7';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 12px;
+        width: 12px;
+        padding: 1px;
+        color: #fff;
+        background-color: #855EEE;
+        border-radius: 50%;
+    }
+    .container-cart-user .cart:hover {
+        color: #855EEE;
+    }
+
+    .container-cart-user .box-user {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+    .container-cart-user .box-user i {
+        transition: transform .2s ease-in-out;
+    }
+    .container-cart-user .box-user:hover i {
+        transform: translateY(5px);
+    }
+    .container-cart-user .box-user img {
+        width: 40px;
+    }
+}
+
+.nav {
+    position: sticky;
+    top: 79.63px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    background-color: #2C2C2F;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .nav-list {
+        font-family: 'Paytone One', sans-serif;
+        font-size: 17px;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        gap: 50px;
+    }
+    .nav-list li a {
+        color: #fff;
+        text-decoration: none;
+        position: relative;
+        transition: color .2s ease-in-out;
+    }
+    .nav-list li a::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        height: 2px;
+        width: 0;
+        background-color: #855EEE;
+        transition: width .2s ease-in-out;
+    }
+    .nav-list li a:hover {
+        color: #855EEE;
+    }
+    .nav-list li a:hover::after {
+        width: 100%;
+    }
+}
+
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+    width: 89%;
+    overflow-x: hidden;
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    .carousel .carousel-image {
+        min-width: 100%;
+        height: auto;
+    }
+    .carousel-button {
+        position: absolute;
+        top: 45%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 50px;
+        border-radius: 50%;
+    }
+    .prev {
+        left: 10px;
+    }
+    .next {
+        right: 10px;
+    }
+    .carousel-button:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+}
+
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+
+    section {
+        display: flex;
+        padding: 16px 20px;
+        flex-direction: column;
+        align-items: center;
+        background-color: #4C4D4F;
+        border-radius: 20px;
+        width: 600px;
+        gap: 30px;
+    }
+    section > div {
+        display: flex;
+        gap: 20px;
+    }
+    section > div > div {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    section > div > div:hover {
+        color: #855EEE;
+    }
+    section > div > div > img {
+        width: 80px;
+    }
+    section > div > div > p {
+        font-family: 'Paytone One', sans-serif;
+        font-size: 13px;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    section > img {
+        width: 420px;
+        margin-top: -30px;
+    }
+}
+
+footer {
+    padding: 18px 25px;
+    margin-top: 50px;
+    background-color: #1C1C1E;
+
+    display: flex;
+    justify-content: space-between;
+
+    .footer-left {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 14px;
+    }
+    .footer-left .box-logo {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 20px;
+        font-family: "Paytone One";
+    }
+    .footer-left .box-logo img {
+        width: 35px;
+    }
+    .footer-left a {
+        color: #fff;
+        width: fit-content;
+    }
+    .footer-left a:hover {
+        color: #855EEE;
+    }
+    .footer-left .info {
+        display: flex;
+        flex-direction: column;
+        color: #7E7E7E;
+    }
+
+    .divider {
+        display: flex;
+        border-left: 1px solid #fff;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        font-size: 14px;
+    }
+    .footer-right div {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,234 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, textarea, select {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #131215;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+* a:hover {
+    color: #855EEE;
+}
+
+/* Estilizações para o header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1C1E;
+    padding: 18px 25px;
+
+    .box-logo {
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 25px;
+        font-family: "Paytone One";
+    }
+    .box-logo img {
+        width: 40px;
+    }
+}
+
+/* Estilizações para a progress-bar */
+.progressRadio {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 4.0625rem;
+    width: 1100px;
+    height: 70px;
+    border: 1px solid #4C4D4F;
+    background-color: #1C1C1E;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin: 40px auto;
+}
+
+.dois {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    cursor: pointer;
+}
+.dois:hover {
+    color: #fff;
+}
+.dois .progressNumber {
+    border: none;
+    background-color: #855EEE;
+    color: #fff;
+    height: 3.0625rem;
+    width: 3.0625rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dois .progressNumber {
+    border: none;
+    background-color: #855EEE;
+    height: 3.0625rem;
+    width: 3.0625rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.um .progressNumber{
+    border: none;
+    color: #fff;
+    background-color: #855EEE;
+    height: 3.0625rem;
+    width: 3.0625rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.um, .tres {
+    color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    cursor: pointer;
+}
+.um:hover, .tres:hover {
+    color: #bbbbbb;
+}
+
+.progressNumber {
+    border: 2px solid #9E9E9E;
+    font-size: 20px;
+    height: 3.0625rem;
+    width: 3.0625rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progressText {
+    display: inherit;
+    flex-direction: column;
+    gap: .3125rem;
+}
+.progressText .title {
+    font-size: .875rem;
+    font-weight: 600;
+}
+
+.progressText .description {
+    font-size: .8125rem;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+    .titles {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 16px 20px;
+        border-radius: 20px;
+        gap: 30px;
+    }
+    form select {
+        padding: 13px;
+        width: 380px;
+        background-color: #1C1C1E;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    form select:invalid {
+        color: #757575;
+        padding: 13px;
+        width: 380px;
+        background-color: #1C1C1E;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    form input {
+        padding: 13px;
+        width: 380px;
+        background-color: #1C1C1E;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    form input:focus, form select:focus {
+        outline: 1px solid #855EEE;
+        box-shadow: 0px 0px 20px #845eee5d;
+    }
+    form .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    form .inputs .inputs-left, form .inputs .inputs-right {
+        display: flex;
+        flex-direction: column;
+    }
+    form input[type="date"]::-webkit-calendar-picker-indicator {
+        cursor: pointer;
+        filter: invert(1) brightness(100%) saturate(10000%) hue-rotate(240deg);
+    }
+
+    .button {
+        border: none;
+        outline: none;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #855EEE;
+        font-size: 20px;
+        border-radius: 8px;
+        width: 350px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .button:hover {
+        background-color: #5e35ce;
+        box-shadow: 0px 0px 50px #845eee85;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    opacity: 50%;
+    margin-top: -170px;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+}

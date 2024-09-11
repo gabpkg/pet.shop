@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Importação das folhas de estilos, fontes e do favicon -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="./styles/create-account.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>home | pet.shop</title>
+    </head>
+
+    <body>
+        <!-- Cabeçalho da página -->
+        <header class="header">
+            <a class="box-logo" href="/index.html">
+                <img src="./assets/logo.svg" alt="Logo Pet.shop">
+                <span>
+                    PetsHouse
+                </span>
+            </a>
+        </header>
+        <!-- Barra de progresso -->
+        <div class=progressRadio>
+            <div class=um>
+                <div class=progressNumber>
+                    <span>
+                        01
+                    </span>
+                </div>
+                <div class=progressText>
+                    <span class=title>
+                        Seus dados
+                    </span>
+                    <span class=description>
+                        Nomel, CPF, endereço...
+                    </span>
+                </div>
+            </div>
+            <svg fill="none" viewBox="0 0 22 80" preserveAspectRatio="none"><path d="M0 -2L20 40L0 82" stroke="#4C4D4F"></path></svg>
+            <div class=dois>
+                <div class=progressNumber>
+                    <span>
+                        02
+                    </span>
+                </div>
+                <div class=progressText>
+                    <span class=title>
+                        Cadastrar seus pets
+                    </span>
+                    <span class=description>
+                        Data de nascimento, última vacinação...
+                    </span>
+                </div>
+            </div>
+            <svg fill="none" viewBox="0 0 22 80" preserveAspectRatio="none"><path d="M0 -2L20 40L0 82" stroke="#4C4D4F"></path></svg>
+            <div class=tres>
+                <div class=progressNumber>
+                    <span>
+                        03
+                    </span>
+                </div>
+                <div class=progressText>
+                    <span class=title>
+                        Conclusão
+                    </span>
+                    <span class=description>
+                        Revisão dos dados e oferta especial!
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!-- Formulário de cadastro -->
+        <main>
+            <div class="titles">
+                <h1 style="font-family: 'Paytone One';">
+                    Primeiro vamos ao SEU cadastro
+                </h1>
+
+                <h3>
+                    Vamos precisar de apenas alguns dados
+                </h3>
+            </div>
+
+            <form>
+                <div class="inputs">
+                    <div class="inputs-left">
+                        <input type="text" placeholder="Nome completo:">
+                        <input type="email" placeholder="Seu e-mail:">
+                        <input type="number" placeholder="CPF:">
+                        <div class="box-password">
+                            <input id="firstPassword" type="password" placeholder="Crie uma senha:">
+                            <i id="btnShowFirstPassword" class="ph ph-eye-closed" onclick="showFirstPassword()"></i>
+                        </div>
+                        <div class="box-password">
+                            <input id="secondPassword" type="password" placeholder="Crie uma senha:">
+                            <i id="btnShowSecondPassword" class="ph ph-eye-closed" onclick="showSecondPassword()"></i>
+                        </div>
+                    </div>
+    
+                    <div class="inputs-right">
+                        <input type="text" placeholder="Rua:">
+                        <input type="text" placeholder="Bairro:">
+                        <input type="number" placeholder="CEP:">
+                        <input type="text" placeholder="Cidade/ES:">
+                    </div>
+                </div>
+            </form>
+            <a class="button" href="./pets-register.html">
+                <span>Próxima etapa</span>
+                <i class="ph ph-caret-right"></i>
+            </a>
+        </main>
+        <!-- Rodapé da página -->
+        <footer>
+                <img src="./assets/animals1.svg" alt="">
+                <img src="./assets/animals2.svg" alt="">
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

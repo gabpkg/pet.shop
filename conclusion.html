@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Importação das folhas de estilos, fontes e do favicon -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="./styles/conclusion.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg">
+
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>home | pet.shop</title>
+    </head>
+
+    <body>
+        <!-- Cabeçalho da página -->
+        <header class="header">
+            <a class="box-logo" href="/index.html">
+                <img src="./assets/logo.svg" alt="Logo Pet.shop">
+                <span>
+                    PetsHouse
+                </span>
+            </a>
+        </header>
+        <!-- Barra de progresso -->
+        <div class=progressRadio>
+            <div class=um>
+                <div class=progressNumber>
+                    <span>
+                        <i class="ph-bold ph-check"></i>
+                    </span>
+                </div>
+                <div class=progressText>
+                    <span class=title>
+                        Seus dados
+                    </span>
+                    <span class=description>
+                        Nomel, CPF, endereço...
+                    </span>
+                </div>
+            </div>
+            <svg fill="none" viewBox="0 0 22 80" preserveAspectRatio="none"><path d="M0 -2L20 40L0 82" stroke="#4C4D4F"></path></svg>
+            <div class=dois>
+                <div class=progressNumber>
+                    <span>
+                        02
+                    </span>
+                </div>
+                <div class=progressText>
+                    <span class=title>
+                        Cadastrar seus pets
+                    </span>
+                    <span class=description>
+                        Data de nascimento, última vacinação...
+                    </span>
+                </div>
+            </div>
+            <svg fill="none" viewBox="0 0 22 80" preserveAspectRatio="none"><path d="M0 -2L20 40L0 82" stroke="#4C4D4F"></path></svg>
+            <div class=tres>
+                <div class=progressNumber>
+                    <span>
+                        03
+                    </span>
+                </div>
+                <div class=progressText>
+                    <span class=title>
+                        Conclusão
+                    </span>
+                    <span class=description>
+                        Revisão dos dados e oferta especial!
+                    </span>
+                </div>
+            </div>
+        </div>
+        <main>
+            <div class="titles">
+                <h1 style="font-family: 'Paytone One';">
+                    Obrigado por se cadastrar! 🎉
+                </h1>
+
+                <h3>
+                    Temos uma oferta especial para você...
+                </h3>
+            </div>
+
+            <div class="">
+                <section class="product">
+                    <div class="product-view">
+                        <div>
+                            <img id="selectedImage" src="./assets/product-offer-img1.svg" alt="">
+                        </div>
+        
+                        <div id="imageGallery" class="image-gallery">
+                        </div>
+                    </div>
+
+                    <div class="product-info">
+                        <h3>
+                            Ração Seca Nutrilus Pro+ Frango & Carne para Cães Adultos de Raças Pequenas
+                        </h3>
+                        <p class="tag-hot">
+                            Mais vendidos
+                            <dotlottie-player src="https://lottie.host/85094b98-3d53-4f2a-9faf-19357f7625e5/WJBtmturMg.json" background="transparent" speed="2" loop autoplay></dotlottie-player>
+                        </p>
+                        <p class="size-title">
+                            Tamanhos
+                        </p>
+                        <div class="radios">
+                            <input type="radio" name="size" value="large" id="large">
+                            <label for="large">
+                                <span>15 kg</span>
+                                <span>R$ 8,09/kg</span>
+
+                            </label>
+                            <input type="radio" name="size" value="medium" id="medium">
+                            <label for="medium">
+                                <span>3kg</span>
+                                <span>R$ 14,90/kg</span>
+                            </label>
+                        </div>
+                        <div class="quantity">
+                            <p>
+                                Quantas unidades?
+                            </p>
+                            <div class="input-quantity">
+                                <button onclick="subtractNumber()"><i class="ph ph-minus"></i></button>
+                                <input type="number" name="quantity" id="quantity" value="1">
+                                <button onclick="addNumber()"><i class="ph ph-plus"></i></button>
+                            </div>
+                        </div>
+
+                        <a class="button" href="./pets-register.html">
+                            <span>Comprar agora</span>
+                            <i class="ph-bold ph-shopping-cart"></i>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!-- Rodapé da página -->
+        <footer>
+            <div class="footer-left">
+                <a class="box-logo" href="/index.html">
+                    <img src="./assets/logo.svg" alt="Logo Pet.shop">
+                    <span>
+                        PetsHouse
+                    </span>
+                </a>
+                <a href="#">
+                    Políticas de privacidade
+                </a>
+                <a href="#">
+                    Temos de uso de cookies
+                </a>
+                <div class="info">
+                    <span>
+                        PetsHouse Comércio de Produtos para Animais S.A.
+                    </span>
+                    <span>
+                        CNPJ: 00.000.000/0001-01
+                    </span>
+                    <span>
+                        Av. das Flores, 1515 - 11º andar, Brooklin, Gramado - RS, 44556-888
+                    </span>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="footer-right">
+                <span>
+                    Formas de pagamento
+                </span>
+                <div>
+                    <img src="./assets/billing-method.svg" alt="">
+                    <img src="./assets/safe-site.svg" alt="">
+                </div>
+                <span>
+                    Compra segura - A PetsHouse garante segurança para suas informações pessoais e financeiras.
+                </span>
+                <span>
+                    Copyright 2024 © Todos os direitos reservados à PetsHouse
+                </span>
+            </div>
+        </footer>
+
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>
