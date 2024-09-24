@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Importação das folhas de estilos, fontes e do favicon -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="./styles/our-services.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="./assets/logo.svg" type="image/svg">
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>home | pet.shop</title>
+    </head>
+
+    <body>
+        <!-- Cabeçalho da página -->
+        <header class="header">
+            <a class="box-logo" href="/index.html">
+                <img src="./assets/logo.svg" alt="Logo Pet.shop">
+                <span>
+                    PetsHouse
+                </span>
+            </a>
+            <div class="box-input-search">
+                <input type="text" name="search-products" id="search-products" placeholder="O que você procura?">
+                <button class="search">
+                    <i class="ph ph-magnifying-glass"></i>
+                </button>
+            </div>
+            <div class="container-cart-user">
+                <div class="box-cart">
+                    <button class="cart">
+                        <i class="ph ph-shopping-cart"></i>
+                    </button>
+                </div>
+                <a href="create-account.html" class="box-user">
+                    <img src="./assets/user-img.svg" alt="User image">
+                    <i class="ph ph-caret-down"></i>
+                </a>
+            </div>
+        </header>
+        <!-- Barra de navegação com links principais -->
+        <nav class="nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="">
+                        Cachorros
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Gatos
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Outros Pets
+                    </a>
+                </li>
+                <li>
+                    <a href="our-services.html">
+                        Nossos serviços
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Formulário de cadastro -->
+        <main>
+            <div class="container">
+                <div class="titles">
+                    <h1 style="font-family: 'Paytone One';">
+                        Contrate os nossos serviços!
+                    </h1>
+    
+                    <h3>
+                        Preencha o formulário abaixo para agendar um de nossos serviços.
+                    </h3>
+                </div>
+    
+                <form>
+                    <div class="inputs">
+                        <div class="inputs-left">
+                            <select name="" id="">
+                                <option value="">
+                                    --Selecione um dos nossos serviços--
+                                </option>
+                                <option value="1">
+                                    Banho & Tosa
+                                </option>
+                                <option value="2">
+                                    Adestramento
+                                </option>
+                                <option value="3">
+                                    Apenas Banho
+                                </option>
+                                <option value="4">
+                                    Apenas Tosa
+                                </option>
+                            </select>
+                            <select name="" id="">
+                                <option value="">
+                                    --Selecione um dos seus pets cadastrados--
+                                </option>
+                                <option value="1">
+                                    Apollo - Cachorro
+                                </option>
+                                <option value="2">
+                                    Dom - Gato
+                                </option>
+                                <option value="3">
+                                    Delaila - Gato
+                                </option>
+                            </select>
+                            <input type="tel" placeholder="Confirme seu telefone:">
+                            <input type="date" placeholder="Data para retirada">
+                        </div>
+                    </div>
+                </form>
+                <a class="button" href="./pets-register.html">
+                    <span>Agendar serviço</span>
+                    <i class="ph ph-caret-right"></i>
+                </a>
+            </div>
+
+
+            <div class="banner-wash">
+                <img src="./assets/cachorro-banho.jpg" alt="">
+            </div>
+        </main>
+        <!-- Rodapé da página -->
+        <footer>
+                <img src="./assets/animals1.svg" alt="">
+                <img src="./assets/animals2.svg" alt="">
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
